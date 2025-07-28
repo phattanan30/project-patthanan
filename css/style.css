@@ -1,0 +1,115 @@
+/* พื้นหลังและฟอนต์ */
+body {
+  background-color: #b0d3da;
+  margin: 0;
+  padding: 40px;
+  font-family: 'K2D', sans-serif;
+  color: #333;
+}
+
+/* หัวข้อ */
+h1 {
+  font-size: 45px;
+  color: darkblue;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+/* ย่อหน้า */
+p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 6px;
+}
+
+/* ปุ่ม 
+button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+  */
+/* เมนูบนขวา */
+.top-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.top-menu a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.top-menu a:hover {
+  color: darkblue;
+}
+
+/* ตาราง */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'K2D', sans-serif;
+  margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 2px solid #666; /* เส้นตารางหนา */
+  padding: 10px;
+  text-align: center;
+}
+
+.styled-table th {
+  font-weight: bold;
+  background-color: #dddddd;
+  color: #333;
+}
+
+.styled-table tbody tr {
+  background-color: white;
+}
+
+/* แกลเลอรี่รูปภาพแนวนอน */
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.gallery-scroll img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+
+
+.gallery-scroll img:hover {
+  transform: scale(1.05);
+}
